@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(21,24,40,1) 0%, rgba(29,48,126,1) 47%, rgba(23,17,17,1) 100%);
+
+}
+
+.carousel{
+
+    position: relative;
+    margin: 70px auto;
+    height: 600px;
+    width: 300px;
+    padding-bottom: 1rem;
+   
+}
+
+.carousel__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.carousel__track-container{
+ 
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 750ms ease-in-out;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+}
+.carousel__button img {
+    width: 24px;
+    height: 24px;
+
+}
+.carousel__button--left{
+    left: -70px;
+}
+.carousel__button--right{
+    right: -70px;
+}
+
+.carousel__nav {
+
+    display: flex;
+    justify-content: center;
+    padding-block: 40px;
+    
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(109, 109, 109, 0.342);
+    margin: 0 6px;
+    cursor: pointer;
+}
+.carousel__indicator.current-slide{
+    background: rgba(255, 255, 255, 0.785);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.main__text{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.65rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    
+}
